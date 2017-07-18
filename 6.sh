@@ -11,7 +11,12 @@
 #       5) END
 #
 i=5
-while test $i != 0
+# The test builtin command returns 0 (True) or 1 (False), 
+# depending on the evaluation of an expression, expr. 
+# You can also use square brackets: test expr and [ expr ] are equivalent.
+
+while test $i != 0 
+# while [ $i != 0]
 do
 	echo "$i
 "
